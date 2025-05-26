@@ -27,6 +27,8 @@ public class MemberConverter {
             case 2:
                 gender = Gender.FEMALE;
                 break;
+            default:
+                break;
         }
 
         return Member.builder()

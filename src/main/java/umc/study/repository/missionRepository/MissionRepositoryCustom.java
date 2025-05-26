@@ -9,7 +9,6 @@ import java.util.List;
 
 public interface MissionRepositoryCustom {
 
-    // 모든 파라미터에 @Param 추가
     @Query("SELECT m FROM Mission m WHERE m.member.id = :memberId")
     List<Mission> findMissionsByMemberId(@Param("memberId") Long memberId);
 
